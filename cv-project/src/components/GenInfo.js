@@ -1,19 +1,35 @@
 import React, {Component} from 'react'
 
 export default class GenInfo extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
+
+        this.state={
+            name:"",
+            email:"",
+            phoneNumber:"",
+        }
+    }
+
+    handleChange=(e)=>{
+        if(e.target.id==="userName"){
+            this.setState({name : e.target.value})
+        } else if(e.target.id === "userEmail"){
+            this.setState({email : e.target.value})
+        }else if(e.target.id === "userPhoneNum"){
+            this.setState({phoneNumber: e.target.value})
+        }
     }
 
     render(){
         return(
             <div className="generalInfoSection">
                 <label htmlFor="userName">Full Name</label>
-                <input id="userName"></input>
+                <input onChange={this.handleChange} id="userName"></input>
                 <label html="userEmail">Email</label>
-                <input id="userEmail"></input>
+                <input onChange={this.handleChange} id="userEmail"></input>
                 <label htmlFor="userPhoneNum">Phone Number</label>
-                <input id="userPhoneNum"></input>
+                <input onChange={this.handleChange} id="userPhoneNum"></input>
             </div>
         )
     }

@@ -1,8 +1,11 @@
 import WholeForm from "./components/WholeForm"
-function App() {
+import CvDisplay from "./components/CvDisplay";
+
+function App(props) {
   return (
     <div className="App">
       <WholeForm/>
+      <CvDisplay/>
     </div>
   );
 }

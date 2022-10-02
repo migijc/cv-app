@@ -4,10 +4,6 @@ import GenInfo from "./GenInfo"
 import EducationInfo from "./EducationInfo"
 
 export default class WholeForm extends React.Component{
-    constructor(){
-        super()
-    }
-
     render(){
         return(
             <>
@@ -19,3 +15,4 @@ export default class WholeForm extends React.Component{
         )
     }
 }
+
