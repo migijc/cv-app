@@ -9,6 +9,7 @@ export default class WholeForm extends React.Component{
         super(props)
         this.state={
             CvInfoDisplayed: false,
+            showForm:"flex",
 
         }
 
@@ -21,26 +22,29 @@ export default class WholeForm extends React.Component{
 
     onSubmit=(e)=>{
         e.preventDefault()
-        e.target.style.visibility="hidden"
+        e.target.style.display="showForm"
+        this.setState({showForm:"none"})
         return this.setState({CvInfoDisplayed: true})
     }
 
-    changeCVInfoDisplayed=()=>{
-        this.setState({CvInfoDisplayed: false})
+    onEditClick=()=>{
+        this.setState({showForm:"flex"})
+        this.setState({CvInfoDisplayed:false})
     }
-    
+
+  
     
     render(){
         return(
             <>
-           {this.state.CvInfoDisplayed === false && (<form className="form">
+           <form className="form" display={"true"} style={{display: this.state.showForm}}>
                 <GenInfo change={this.onChange}/>
                 <ExperienceInfo change={this.onChange}/>
                 <EducationInfo change={this.onChange}/>
                 <button onClick={this.onSubmit}className="submitButton">Create CV</button>
-            </form>)}
+            </form>
 
-            {this.state.CvInfoDisplayed && (<CvDisplay userInfo={this.state} changeDisplayInfo={this.changeCVInfoDisplayed}/>)}
+            {this.state.CvInfoDisplayed && (<CvDisplay userInfo={this.state} handleEditClick={this.onEditClick}/>)}
 
          
             </>

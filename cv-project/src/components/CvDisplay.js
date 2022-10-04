@@ -37,7 +37,7 @@ export default class CvDisplay extends React.Component{
                   
                 </div>
 
-                <button onClick={this.props.changeDisplayInfo} className="editButton">Edit Resume</button>
+                <button onClick={this.props.handleEditClick} className="editButton">Edit Resume</button>
  
             </div>
         )
