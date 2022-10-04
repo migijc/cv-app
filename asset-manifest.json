@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cv-app/static/css/main.03e4edb7.css",
-    "main.js": "/cv-app/static/js/main.734d5dfe.js",
+    "main.css": "/cv-app/static/css/main.28bf02a1.css",
+    "main.js": "/cv-app/static/js/main.b57353f6.js",
     "static/media/roboto-latin-900italic.woff": "/cv-app/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/cv-app/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
     "static/media/roboto-latin-500italic.woff": "/cv-app/static/media/roboto-latin-500italic.18d00f739ff1e1c52db1.woff",
@@ -29,11 +29,11 @@
     "static/media/roboto-latin-900.woff2": "/cv-app/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "static/media/fredoka-one-latin-400.woff2": "/cv-app/static/media/fredoka-one-latin-400.8a25344563abf58e76d3.woff2",
     "index.html": "/cv-app/index.html",
-    "main.03e4edb7.css.map": "/cv-app/static/css/main.03e4edb7.css.map",
-    "main.734d5dfe.js.map": "/cv-app/static/js/main.734d5dfe.js.map"
+    "main.28bf02a1.css.map": "/cv-app/static/css/main.28bf02a1.css.map",
+    "main.b57353f6.js.map": "/cv-app/static/js/main.b57353f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.03e4edb7.css",
-    "static/js/main.734d5dfe.js"
+    "static/css/main.28bf02a1.css",
+    "static/js/main.b57353f6.js"
   ]
 }
