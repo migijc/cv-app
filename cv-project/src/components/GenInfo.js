@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+
 export default class GenInfo extends React.Component{
     constructor(props){
         super(props)
@@ -10,6 +11,7 @@ export default class GenInfo extends React.Component{
             phoneNumber:"",
         }
     }
+
 
     handleChange=(e)=>{
         if(e.target.id==="userName"){
@@ -25,11 +27,11 @@ export default class GenInfo extends React.Component{
         return(
             <div className="generalInfoSection">
                 <label htmlFor="userName">Full Name</label>
-                <input onChange={this.handleChange} id="userName"></input>
+                <input onChange={this.props.change} id="userName"></input>
                 <label html="userEmail">Email</label>
-                <input onChange={this.handleChange} id="userEmail"></input>
+                <input onChange={this.props.change} id="userEmail"></input>
                 <label htmlFor="userPhoneNum">Phone Number</label>
-                <input onChange={this.handleChange} id="userPhoneNum"></input>
+                <input onChange={this.props.change} id="userPhoneNum"></input>
             </div>
         )
     }

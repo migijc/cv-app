@@ -25,11 +25,11 @@ export default class EducationInfo extends React.Component{
         return(
             <div className="educationHistory">
                 <label htmlFor="schoolAttended">College Attended</label>
-                <input onChange={this.handleChange} id="schoolAttended"></input>
+                <input onChange={this.props.change} id="schoolAttended"></input>
                 <label html="major">Field of Study</label>
-                <input onChange={this.handleChange} id="major"></input>
-                <label htmlFor="graduationDate">date Graduated</label>
-                <input onChange={this.handleChange} type="date" id="graduationDate"></input>
+                <input onChange={this.props.change} id="major"></input>
+                <label htmlFor="graduationDate">Date Graduated</label>
+                <input onChange={this.props.change} type="date" id="graduationDate"></input>
             </div>
         )
     }

@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "typeface-fredoka-one": "^1.1.13",
+    "typeface-roboto": "^1.1.13"
   }
 }

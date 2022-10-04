@@ -1,11 +1,11 @@
 import WholeForm from "./components/WholeForm"
-import CvDisplay from "./components/CvDisplay";
-
+import Header from "./components/Header";
+import css from './app.css'
 function App(props) {
   return (
     <div className="App">
+      <Header/>
       <WholeForm/>
-      <CvDisplay/>
     </div>
   );
 }
