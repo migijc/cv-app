@@ -12,17 +12,6 @@ export default class GenInfo extends React.Component{
         }
     }
 
-
-    handleChange=(e)=>{
-        if(e.target.id==="userName"){
-            this.setState({name : e.target.value})
-        } else if(e.target.id === "userEmail"){
-            this.setState({email : e.target.value})
-        }else if(e.target.id === "userPhoneNum"){
-            this.setState({phoneNumber: e.target.value})
-        }
-    }
-
     render(){
         return(
             <div className="generalInfoSection">

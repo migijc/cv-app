@@ -10,17 +10,6 @@ import React, {Component} from "react"
         }
     }
 
-    
-    handleChange=(e)=>{
-        if(e.target.id==="relevantJobTitle"){
-            this.setState({jobTitle : e.target.value})
-        } else if(e.target.id === "relevantJobCompany"){
-            this.setState({company : e.target.value})
-        }else if(e.target.id === "relevantJobStartDate"){
-            this.setState({startDate: e.target.value})
-        }
-    }
-    
     render(){
         return(
             <div className="experienceInfoSection">
